@@ -8,11 +8,10 @@ module.exports = React.createClass({
 
   displayName: 'Main',
 
-  render():any {
+  render():ReactElement {
     return (
       <div>
-        <span>Game Goes Here</span>
-        <ExampleStage width={600} height={400} xposition={200} />
+        <ExampleStage width={window.innerWidth} height={window.innerHeight} />
       </div>
     )
   }
